@@ -1,5 +1,5 @@
 from urlextract import URLExtract
-from streamlit_wordcloud import wordcloud
+import streamlit_wordcloud as wordcloud
 import pandas as pd
 from collections import Counter
 import emoji
