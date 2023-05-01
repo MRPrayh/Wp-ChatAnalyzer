@@ -4,9 +4,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.markdown("""
+<html>
 <head>
     <title> WhatsChat | Analyze your Chats |</title>
 </head>
+</html>
 """, unsafe_allow_html=True)
 
 st.markdown("""
