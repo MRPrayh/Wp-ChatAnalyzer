@@ -34,7 +34,7 @@ def most_busy_users(df):
     df = round((df['user'].value_counts() / df.shape[0]) * 100, 2).reset_index().rename(
         columns={'index': 'name', 'user': 'percent'})
     return x,df
-
+"""
 def create_wordcloud(selected_user,df):
 
     f = open('stop_hinglish.txt', 'r')
@@ -52,7 +52,7 @@ def create_wordcloud(selected_user,df):
         if word not in stop_words:
             y.append(word)
             return " ".join(y)
-    """
+    
     wc = wordcloud.visualize(width=500,height=500,min_font_size=10,background_color='white')
     temp['message'] = temp['message'].apply(remove_stop_words)
     df_wc = wc.generate(temp['message'].str.cat(sep=" "))
