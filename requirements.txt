@@ -1,10 +1,7 @@
-pandas
-numpy
+streamlit
 matpoltlib
 seaborn
-streamlit
 collections
 emoji
 wordcloud
 urlextract
-re
