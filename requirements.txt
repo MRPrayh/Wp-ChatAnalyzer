@@ -1,3 +1,4 @@
 numpy==1.20.0
 urlextract==1.8.0
 streamlit-wordcloud==0.1.0
+emoji==2.2.0
