@@ -17,7 +17,7 @@ def preprocess(data):
             user.append(entry[1])
             msgs.append(entry[2])
         else:
-            user.append('group notification')
+            user.append('group_notification')
             msgs.append(entry[0])
     df['user'] = user
     df['message'] = msgs
