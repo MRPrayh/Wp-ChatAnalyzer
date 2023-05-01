@@ -1,2 +1,2 @@
 urlextract==1.8.0
-streamlit-wordcloud
+streamlit_wordcloud
