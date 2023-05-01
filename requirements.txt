@@ -1,0 +1,11 @@
+python==3.7.0
+pandas
+numpy
+matpoltlib
+seaborn
+streamlit
+collections
+emoji
+wordcloud
+urlextract
+re
