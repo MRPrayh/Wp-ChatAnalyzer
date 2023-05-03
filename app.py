@@ -31,7 +31,7 @@ if uploaded_file is not None:
     user_list.sort()
     user_list.insert(0,"Overall")
 
-    selected_user = st.sidebar.selectbox("Show analysis wrt",user_list)
+    selected_user = st.sidebar.selectbox("Show analysis w.r.t.",user_list)
 
     if st.sidebar.button("Show Analysis"):
 
@@ -74,7 +74,7 @@ if uploaded_file is not None:
         col1,col2 = st.columns(2)
 
         with col1:
-            st.header("Most busy day")
+            st.header("Most Busy Day")
             busy_day = helper.week_activity_map(selected_user,df)
             fig,ax = plt.subplots()
             ax.bar(busy_day.index,busy_day.values,color='purple')
@@ -82,7 +82,7 @@ if uploaded_file is not None:
             st.pyplot(fig)
 
         with col2:
-            st.header("Most busy month")
+            st.header("Most Busy Month")
             busy_month = helper.month_activity_map(selected_user, df)
             fig, ax = plt.subplots()
             ax.bar(busy_month.index, busy_month.values,color='orange')
@@ -118,5 +118,5 @@ if uploaded_file is not None:
         ax.barh(most_common_df[0],most_common_df[1])
         plt.xticks(rotation='vertical')
 
-        st.title('Most commmon words')
+        st.title('Most Common Words')
         st.pyplot(fig)
