@@ -1,2 +1,3 @@
 # WhatsChat | Analyze your Chats!
-This is a Streamlit based Python Web App that gives us user analytics of our Whatsapp group's and personal chat when provided with exported chats from the user
+Get Chat Analytics for WhatsApp Groups and Personal Chats.
+Just Upload your Chats.txt file through Export chat feature on your WhatsApp Mobile App.
