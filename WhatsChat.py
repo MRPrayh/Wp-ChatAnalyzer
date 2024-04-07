@@ -3,6 +3,18 @@ import preprocessor,helper
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+st.set_page_config(
+    page_title="WhatsChat | Online WhatsApp Chat Analyzer",
+    page_icon=":bar_chart",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    # menu_items={
+    #     'Get Help': 'https://www.extremelycoolapp.com/help',
+    #     'Report a bug': "https://www.extremelycoolapp.com/bug",
+    #     'About': "# This is a header. This is an *extremely* cool app!"
+    # }
+)
+
 st.markdown("""
 <style>
 .st-emotion-cache-1p1m4ay.e3g6aar0 {
@@ -12,7 +24,7 @@ st.markdown("""
 
 # Home Page
 st.title("WhatsChat")
-st.subheader("Online WhatsApp Chat Analyzer!")
+st.write("*Online WhatsApp Chat Analyzer!* :bar_chart")
 
 st.link_button("How to Export Chats?", "https://faq.whatsapp.com/1180414079177245/?cms_platform=android")
 
