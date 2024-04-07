@@ -5,21 +5,21 @@ import seaborn as sns
 
 st.markdown("""
 <style>
-.css-14xtw13.e8zbici0
-{
-    visibility : hidden;
-}
-
-.css-cio0dv.egzxvld1
-{
+.st-emotion-cache-1p1m4ay.e3g6aar0 {
     visibility : hidden;
 }
 </style>""", unsafe_allow_html=True)
 
+# Home Page
+st.title("WhatsChat")
+st.subheader("Online WhatsApp Chat Analyzer!")
 
-st.sidebar.title("Whatsapp Chat Analyzer")
+st.link_button("How to Export Chats?", "https://faq.whatsapp.com/1180414079177245/?cms_platform=android")
 
-uploaded_file = st.sidebar.file_uploader("Choose a file")
+# Sidebar
+st.sidebar.title("Get Your Chat Analytics")
+
+uploaded_file = st.sidebar.file_uploader("Choose a .txt Chat File")
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
