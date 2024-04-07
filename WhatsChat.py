@@ -6,7 +6,7 @@ import seaborn as sns
 st.set_page_config(
     page_title="WhatsChat | Online WhatsApp Chat Analyzer",
     page_icon=":bar_chart",
-    layout="wide",
+    # layout="wide",
     initial_sidebar_state="expanded",
     # menu_items={
     #     'Get Help': 'https://www.extremelycoolapp.com/help',
