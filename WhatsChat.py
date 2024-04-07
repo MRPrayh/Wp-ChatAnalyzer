@@ -22,17 +22,19 @@ st.markdown("""
 }
 </style>""", unsafe_allow_html=True)
 
-# Home Page
-st.title("WhatsChat")
-st.write("*Online WhatsApp Chat Analyzer!* :bar_chart")
-
-st.link_button("How to Export Chats?", "https://faq.whatsapp.com/1180414079177245/?cms_platform=android")
-
 # Sidebar
 st.sidebar.title("Get Your Chat Analytics")
 
 uploaded_file = st.sidebar.file_uploader("Choose a .txt Chat File")
-if uploaded_file is not None:
+
+if uploaded_file is None:
+    # Home Page
+    st.title("WhatsChat :bar_chart:")
+    st.write("*Online WhatsApp Chat Analyzer!*")
+
+    st.link_button("How to Export Chats?", "https://faq.whatsapp.com/1180414079177245/?cms_platform=android")
+    
+else:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
     df = preprocessor.preprocess(data)
