@@ -34,8 +34,8 @@ if uploaded_file is None:
     
     st.link_button("How to Export Chats?", "https://faq.whatsapp.com/1180414079177245/?cms_platform=android")
     
-    st.write("*If the side-menu is closed:door:*")
-    st.write("*Click on the *:point_up_2::point_left:*top-left corner icon*")
+    st.write("\n*If the side-menu is closed*:door:")
+    st.write("*Click on the top-left corner icon*:point_up_2::point_left:")
     
 else:
     bytes_data = uploaded_file.getvalue()
