@@ -59,20 +59,12 @@ else:
 
         with col1:
             st.metric("Total Messages", num_messages)
-            """st.header("Total Messages")
-            st.title(num_messages)"""
         with col2:
             st.metric("Total Words", words)
-            """st.header("Total Words")
-            st.title(words)"""
         with col3:
             st.metric("Media Shared", num_media_messages)
-            """st.header("Media Shared")
-            st.title(num_media_messages)"""
         with col4:
             st.metric("Links Shared", num_links)
-            """st.header("Links Shared")
-            st.title(num_links)"""
 
         # monthly timeline
         st.title("Monthly Timeline")
