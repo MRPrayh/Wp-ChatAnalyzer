@@ -31,9 +31,11 @@ if uploaded_file is None:
     # Home Page
     st.title("WhatsChat :bar_chart:")
     st.write("Online WhatsApp Chat Analyzer!")
-    st.write(":point_left:*Open the sidebar from the top-left corner to upload your WhatsApp chats*")
     
     st.link_button("How to Export Chats?", "https://faq.whatsapp.com/1180414079177245/?cms_platform=android")
+    
+    st.write("*If the side-menu is closed:door:*")
+    st.write("*Click on the *:point_up_2::point_left:*top-left corner icon*")
     
 else:
     bytes_data = uploaded_file.getvalue()
