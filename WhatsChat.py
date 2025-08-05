@@ -6,7 +6,7 @@ import seaborn as sns
 st.set_page_config(
     page_title="WhatsChat | Online WhatsApp Chat Analyzer",
     page_icon=":bar_chart",
-    # layout="wide",
+    layout="wide",
     initial_sidebar_state="expanded",
     # menu_items={
     #     'Get Help': 'https://www.extremelycoolapp.com/help',
@@ -25,17 +25,28 @@ st.markdown("""
 # Sidebar
 st.sidebar.title("Get Your Chat Analytics")
 
-uploaded_file = st.sidebar.file_uploader("Choose a .txt Chat File", type='.txt')
+uploaded_file = st.sidebar.file_uploader("Drop *\"WhatsApp Chat with YOUR_KNOWN.txt\"*", type='.txt')
 
 if uploaded_file is None:
     # Home Page
     st.title("WhatsChat :bar_chart:")
-    st.write("Online WhatsApp Chat Analyzer!")
-    
+    st.subheader("Online WhatsApp Chat Analyzer!")
+    st.write("Whatschat is a **Free WhatsApp Chat Analyzer** for your **WhatsApp Group Chats** and **Personal Chats**.")
     st.link_button("How to Export Chats?", "https://faq.whatsapp.com/1180414079177245/?cms_platform=android")
     
-    st.write("\n*If the side-menu is closed*:door:")
-    st.write("*Click on the top-left corner icon*:point_up_2::point_left:")
+    st.write("")
+    st.subheader("Is your Data Safe With Us?")
+    st.write("We operate with a **\'0% Personal Data Stored\'** policy")
+    st.write(":white_check_mark: We never store any of your *personal data* or the *chats* that you upload.")
+    st.write(":white_check_mark: All of your *analytics* and *chats* are processed within your browser itself.")
+    st.write("So, now that we\'re done with the chit-chat, let's start analyzing your chats! *(for absolutely free)*")
+
+    st.divider()
+    
+    st.subheader("**_Where to upload your chats?_**")
+    st.write("*If you cannot find the **\'Browse files\'** button...*")
+    st.write("*Click on the top-left corner icon*:point_up_2::point_left:*to get started*")
+    st.divider()
     
 else:
     bytes_data = uploaded_file.getvalue()
