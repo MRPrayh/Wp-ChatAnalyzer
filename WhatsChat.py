@@ -61,7 +61,7 @@ else:
 
     selected_user = st.sidebar.selectbox("Show analysis w.r.t.",user_list)
 
-    if st.sidebar.button("Show Analysis"):
+    if st.sidebar.button("View Analysis"):
 
         # Stats Area
         num_messages, words, num_media_messages, num_links = helper.fetch_stats(selected_user,df)
@@ -144,3 +144,7 @@ else:
 
         st.title('Most Common Words')
         st.pyplot(fig)
+    else:
+        st.subheader("For Group Chats:")
+        st.write(":white_check_mark: You can either view **Overall** Group-level Analysis")
+        st.write(":white_check_mark: Or you can choose a **Group Member** from the dropdown")
